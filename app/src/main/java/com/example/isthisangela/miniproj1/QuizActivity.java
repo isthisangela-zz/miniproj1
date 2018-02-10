@@ -57,7 +57,6 @@ public class QuizActivity extends AppCompatActivity {
                 timer.start();
             }
         };
-        timer.start();
 
         //Button to add contact
         i.setOnClickListener(new View.OnClickListener() {
