@@ -21,4 +21,8 @@ public class Start extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+    }
 }

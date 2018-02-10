@@ -5,7 +5,6 @@
     android:id="@+id/activity_quiz"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:android.orientation="vertical"
     android:padding="16dp"
     tools:context="com.example.isthisangela.miniproj1.QuizActivity">
 
@@ -36,7 +35,7 @@
 
     <Button
         android:id="@+id/endgame"
-        android:layout_width="88dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
         android:text="Quit"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,6 +75,21 @@
         app:layout_constraintGuide_begin="42dp" />
 
     <Button
+        android:id="@+id/option1"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/option3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+    <Button
         android:id="@+id/option2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -92,20 +106,6 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/option4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/option2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option3" />
-
-    <Button
         android:id="@+id/option3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -118,22 +118,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option" />
+        app:layout_constraintTop_toBottomOf="@+id/option1" />
 
     <Button
-        android:id="@+id/option"
+        android:id="@+id/option4"
         android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/option3"
+        app:layout_constraintBottom_toTopOf="@+id/option2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/picture" />
+        app:layout_constraintTop_toBottomOf="@+id/option3" />
 
 
 </android.support.constraint.ConstraintLayout>
