@@ -5,7 +5,7 @@ package com.example.isthisangela.miniproj1;
  */
 
 public class Members {
-    Integer[] pics = {
+    public static final Integer[] pics = {
             R.drawable.aayushtyagi,
             R.drawable.abhinavkoppu,
             R.drawable.adityayadav,
@@ -60,8 +60,8 @@ public class Members {
             R.drawable.xinyichen,
             R.drawable.younglin,
             R.drawable.zachgovani
-    }
-    String[] names = {
+    };
+    public static final String[] names = {
             "Aayush Tyagi",
             "Abhinav Koppu",
             "Aditya Yadav",
@@ -116,5 +116,5 @@ public class Members {
             "Xin Yi Chen",
             "Young Lin",
             "Zach Govani"
-    }
+    };
 }
