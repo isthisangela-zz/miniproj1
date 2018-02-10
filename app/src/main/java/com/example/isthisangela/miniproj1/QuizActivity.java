@@ -18,8 +18,7 @@ import java.util.Random;
 
 public class QuizActivity extends AppCompatActivity {
     final int total = 54;
-    int q;
-    int pts;
+    int q, pts, rightbutton;
     ImageButton i;
     Button b1, b2, b3, b4, quit;
     TextView countdown, score;
@@ -34,6 +33,7 @@ public class QuizActivity extends AppCompatActivity {
         //Question number
         q = 0;
         pts = 0;
+        rightbutton = 3;
 
         //Buttons n text
         i = findViewById(R.id.picture);
@@ -73,28 +73,44 @@ public class QuizActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                correct();
+                if (rightbutton = 1) {
+                    correct();
+                } else {
+                    incorrect();
+                }
             }
         });
 
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                incorrect();
+                if (rightbutton = 2) {
+                    correct();
+                } else {
+                    incorrect();
+                }
             }
         });
 
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                incorrect();
+                if (rightbutton = 3) {
+                    correct();
+                } else {
+                    incorrect();
+                }
             }
         });
 
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                incorrect();
+                if (rightbutton = 4) {
+                    correct();
+                } else {
+                    incorrect();
+                }
             }
         });
 
@@ -137,6 +153,7 @@ public class QuizActivity extends AppCompatActivity {
         b2.setText(current.getWrong1());
         b3.setText(current.getWrong2());
         b4.setText(current.getWrong3());
+        rightbutton = 1;
         timer.start();
     }
 
